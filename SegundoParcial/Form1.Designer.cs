@@ -75,6 +75,7 @@
             this.txtPassword.Size = new System.Drawing.Size(333, 30);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.Text = "Password";
+            this.txtPassword.TextChanged += new System.EventHandler(this.TxtPassword_TextChanged);
             this.txtPassword.Enter += new System.EventHandler(this.txtPassEnter);
             this.txtPassword.Leave += new System.EventHandler(this.txtPassLeave);
             // 
@@ -127,9 +128,9 @@
             this.panelRegister.Controls.Add(this.txtUsernameRegister);
             this.panelRegister.Controls.Add(this.btnRegister);
             this.panelRegister.Controls.Add(this.pictureBox3);
-            this.panelRegister.Location = new System.Drawing.Point(32, 0);
+            this.panelRegister.Location = new System.Drawing.Point(0, 0);
             this.panelRegister.Name = "panelRegister";
-            this.panelRegister.Size = new System.Drawing.Size(667, 388);
+            this.panelRegister.Size = new System.Drawing.Size(691, 388);
             this.panelRegister.TabIndex = 1;
             // 
             // pictureBox2
@@ -152,6 +153,7 @@
             this.btnLoginHome.TabIndex = 1;
             this.btnLoginHome.Text = "LOG IN";
             this.btnLoginHome.UseVisualStyleBackColor = false;
+            this.btnLoginHome.Click += new System.EventHandler(this.BtnLoginHome_Click);
             // 
             // btnRegisterHome
             // 
@@ -163,6 +165,7 @@
             this.btnRegisterHome.TabIndex = 2;
             this.btnRegisterHome.Text = "REGISTER";
             this.btnRegisterHome.UseVisualStyleBackColor = false;
+            this.btnRegisterHome.Click += new System.EventHandler(this.BtnRegisterHome_Click);
             // 
             // panelHome
             // 
@@ -170,9 +173,9 @@
             this.panelHome.Controls.Add(this.btnRegisterHome);
             this.panelHome.Controls.Add(this.btnLoginHome);
             this.panelHome.Controls.Add(this.pictureBox2);
-            this.panelHome.Location = new System.Drawing.Point(14, 0);
+            this.panelHome.Location = new System.Drawing.Point(0, 0);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(698, 388);
+            this.panelHome.Size = new System.Drawing.Size(709, 388);
             this.panelHome.TabIndex = 6;
             this.panelHome.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel3_Paint);
             // 
@@ -208,7 +211,7 @@
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(158, 41);
             this.btnRegister.TabIndex = 7;
-            this.btnRegister.Text = "LOG IN";
+            this.btnRegister.Text = "REGISTER";
             this.btnRegister.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
