@@ -77,5 +77,47 @@ namespace SegundoParcial
             }
             con.Close();
         }
+
+        private void Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUserEnteredRegister(object sender, EventArgs e)
+        {
+            if (txtUsername.Text.Equals(@"Username \ Email"))
+            {
+                txtUsername.Text = "";
+            }
+        }
+
+        private void txtUserLeaveRegister(object sender, EventArgs e)
+        {
+            if (txtUsername.Text.Equals(""))
+            {
+                txtUsername.Text = @"Username \ Email";
+            }
+        }
+
+        private void txtPassEnterRegister(object sender, EventArgs e)
+        {
+            if (txtPassword.Text.Equals("Password"))
+            {
+                txtPassword.Text = "";
+            }
+        }
+
+        private void txtPassLeaveRegister(object sender, EventArgs e)
+        {
+            if (txtPassword.Text.Equals(""))
+            {
+                txtPassword.Text = "Password";
+            }
+        }
     }
 }
