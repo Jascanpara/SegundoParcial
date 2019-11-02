@@ -206,7 +206,7 @@ namespace SegundoParcial
                     cmds.Parameters.AddWithValue("@contrasena", contrasena);
                     cmds.ExecuteNonQuery();*/
                     this.Hide(); //esto oculta el Form en el que estamos
-                    new Inicio(usuario).Show(); //Acá marca error porque no hay nada en la fila 0
+                    new Inicio(usuario).Show(); 
                 }
                 else
                 {
