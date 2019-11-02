@@ -213,6 +213,7 @@
             this.btnRegister.TabIndex = 7;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // pictureBox3
             // 
