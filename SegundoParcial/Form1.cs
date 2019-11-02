@@ -71,7 +71,10 @@ namespace SegundoParcial
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            loguear(this.txtUsername.Text, this.txtPassword.Text);
+            p1.Name = this.txtUsername.Text;
+            p1.passInfo.Pass = this.txtPassword.Text;
+            loguear(p1.Name, p1.passInfo.Pass);
+            //loguear(this.txtUsername.Text, this.txtPassword.Text);
             /*con.Open();
             com.Connection = con;
             com.CommandText = "SELECT * from Users";
@@ -233,7 +236,10 @@ namespace SegundoParcial
 
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            registrar(txtUsernameRegister.Text,txtPasswordRegister.Text);
+            p1.Name = txtUsernameRegister.Text;
+            p1.passInfo.Pass = txtPasswordRegister.Text;
+            registrar(p1.Name, p1.passInfo.Pass);
+            //registrar(txtUsernameRegister.Text,txtPasswordRegister.Text);
         }
     }
 }
